@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+
+    public function delete(){}
+
     public function __construct()
     {
     }
@@ -14,5 +17,6 @@ class UserController extends Controller
     function index()
     {
         $users = User::all();
+
     }
 }
